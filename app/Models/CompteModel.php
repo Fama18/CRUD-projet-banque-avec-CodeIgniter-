@@ -6,5 +6,5 @@ class CompteModel extends Model
 {
     protected $table = 'compte';
 
-    protected $allowedFields = ['numagence', 'numCompte','cleRib'];
+    protected $allowedFields = ['numagence', 'numCompte','cleRib','clientphysique'];
 }

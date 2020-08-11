@@ -44,28 +44,23 @@ button {
 
     <div class="row">
       <div class="col-md-9">
-        <form action="<?php echo base_url('public/Moral/update');?>" name="edit-clientmoral" id="edit-clientmoral" method="post" accept-charset="utf-8">
+        <form action="<?php echo base_url('public/Compte/updateCm');?>" name="edit-compte" id="edit-compte" method="post" accept-charset="utf-8">
 
-           <input readonly name="id" class="form-control" id="Id" value="<?php echo $clientmoral['id'] ?>">
+           <input readonly name="id" class="form-control" id="Id" value="<?php echo $compte['id'] ?>">
 
           <div class="form-group">
-            <label for="nomEntreprise">Nom de l'entreprise</label>
-            <input type="text" name="nomEntreprise" class="form-control" id="nomEntreprise" placeholder="Please enter your enterprise name" value="<?php echo $clientmoral['nomEntreprise'] ?>">
+          <label for="numagence">Numero Agence</label>
+            <input type="text" id="numagence" name="numagence" placeholder="Numero Agence" value="<?php echo $compte['numagence'] ?>">
           </div>
 
           <div class="form-group">
-            <label for="AdresseEntreprise">Adresse de l'entreprise</label>
-            <input type="text" name="AdresseEntreprise" class="form-control" id="AdresseEntreprise" placeholder="Entrer l'adresse de l'entreprise" value="<?php echo $clientmoral['AdresseEntreprise'] ?>">
+          <label for="numCompte">Numero Compte</label>
+            <input type="text" id="numCompte" name="numCompte" placeholder="Numero Compte" value="<?php echo $compte['numCompte'] ?>">
           </div>
 
           <div class="form-group">
-            <label for="RaisonSocial">Raison sociale</label>
-            <input type="text" name="RaisonSocial" class="form-control" id="RaisonSocial" placeholder="Raison sociale" value="<?php echo $clientmoral['RaisonSocial'] ?>">
-          </div>
-
-          <div class="form-group">
-            <label for="numIdent">Numero d'identification</label>
-            <input type="text" name="numIdent" class="form-control" id="numIdent" placeholder="Numero d'identification" value="<?php echo $clientmoral['numIdent'] ?>">
+          <label for="cleRib">Cle Rib</label>
+            <input type="text" id="cleRib" name="cleRib" placeholder="Cle Rib" value="<?php echo $compte['cleRib'] ?>">
           </div>
 
           <div class="form-group">

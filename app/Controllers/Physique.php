@@ -18,6 +18,7 @@ class Physique extends Controller
     public function createCp()
     {
         return view('physique/create-clientphysique');
+
     }
 
     public function storeCp()
@@ -40,6 +41,8 @@ class Physique extends Controller
             ];
 
         //var_dump ($data);
+        //var_dump ($model);
+
         //die();
 
         $save = $model->insert($data);
@@ -92,5 +95,15 @@ class Physique extends Controller
      $data['clientphysique'] = $model->where('id', $id)->delete();
 
      return redirect()->to( base_url('public/Physique/indexCp') );
+    }
+
+    
+    public function list()
+    {
+        $model = new PhysiqueModel();
+
+        $data['clientphysique'] = $model->orderBy('id', 'ASC')->findAll();
+
+        return view('compte/create-compte', $data);
     }
 }

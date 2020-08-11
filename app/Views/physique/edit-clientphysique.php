@@ -18,7 +18,7 @@ body {
 label {
     width:200px;
 }
-input {
+input,select {
     width:500px;
     height:50px;
 }
@@ -50,17 +50,17 @@ button {
 
           <div class="form-group">
           <label for="numCni">Numero CNI</label>
-            <input type="text" id="numCni" name="numCni" value="" placeholder="Numero CNI" value="<?php echo $clientphysique['numCni'] ?>">
+            <input type="text" id="numCni" name="numCni" placeholder="Numero CNI" value="<?php echo $clientphysique['numCni'] ?>">
           </div>
 
           <div class="form-group">
           <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" value="" placeholder="Nom" value="<?php echo $clientphysique['nom'] ?>">
+            <input type="text" id="nom" name="nom" placeholder="Nom" value="<?php echo $clientphysique['nom'] ?>">
           </div>
 
           <div class="form-group">
           <label for="prenom">Prenom</label>
-            <input type="text" id="prenom" name="prenom" value="" placeholder="Prenom" value="<?php echo $clientphysique['prenom'] ?>">
+            <input type="text" id="prenom" name="prenom" placeholder="Prenom" value="<?php echo $clientphysique['prenom'] ?>">
           </div>
 
           <div class="form-group">
@@ -75,22 +75,22 @@ button {
 
           <div class="form-group">
           <label for="DateDeNaissance">Date De Naissance</label>
-            <input type="text" id="DateDeNaissance" name="DateDeNaissance" value="" placeholder="Date De Naissance" value="<?php echo $clientphysique['DateDeNaissance'] ?>">
+            <input type="text" id="DateDeNaissance" name="DateDeNaissance" placeholder="Date De Naissance" value="<?php echo $clientphysique['DateDeNaissance'] ?>">
           </div>
 
           <div class="form-group">
           <label for="adresse">Adresse</label>
-            <input type="text" id="adresse" name="adresse" value="" placeholder="Adresse" value="<?php echo $clientphysique['adresse'] ?>">
+            <input type="text" id="adresse" name="adresse" placeholder="Adresse" value="<?php echo $clientphysique['adresse'] ?>">
           </div>
 
           <div class="form-group">
           <label for="email">Email</label>
-            <input type="email" id="email" name="email" value="" placeholder="Email" value="<?php echo $clientphysique['email'] ?>">
+            <input type="email" id="email" name="email" placeholder="Email" value="<?php echo $clientphysique['email'] ?>">
           </div>
 
           <div class="form-group">
           <label for="telephone">Telephone</label>
-            <input type="text" id="telephone" name="telephone" value="" placeholder="Telephone" value="<?php echo $clientphysique['telephone'] ?>">
+            <input type="text" id="telephone" name="telephone"z placeholder="Telephone" value="<?php echo $clientphysique['telephone'] ?>">
           </div>
 
           <div class="form-group">

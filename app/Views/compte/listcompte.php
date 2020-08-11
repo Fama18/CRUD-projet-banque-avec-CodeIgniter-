@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Codeigniter 4 users List Example - Tutsmake.com</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>"/>
 </head>
 
 <body>
@@ -25,34 +26,27 @@
      <table class="table table-bordered" id="users">
        <thead>
           <tr>
-             <th>Id Client Physique</th>
-             <th>Numero CNI</th>
-             <th>Nom</th>
-             <th>Prenom</th>
-             <th>Civilite</th>
-             <th>Date de Naissance</th>
-             <th>Adresse</th>
-             <th>Email</th>
-             <th>Telephone</th>
+             <th>Id Compte</th>
+             <th>Numero Agence</th>
+             <th>Numero Compte</th>
+             <th>Cle Rib</th>
+             <th>Client</th>
+             <th></th>
           </tr>
        </thead>
        <tbody>
-          <?php if($clientphysique): ?>
-          <?php foreach($clientphysique as $cp): ?>
+          <?php if($compte): ?>
+          <?php foreach($compte as $ct): ?>
           <tr>
-             <td><?php echo $cp['id']; ?></td>
-             <td><?php echo $cp['numCni']; ?></td>
-             <td><?php echo $cp['nom']; ?></td>
-             <td><?php echo $cp['prenom']; ?></td>
-             <td><?php echo $cp['civilite']; ?></td>
-             <td><?php echo $cp['DateDeNaissance']; ?></td>
-             <td><?php echo $cp['adresse']; ?></td>
-             <td><?php echo $cp['email']; ?></td>
-             <td><?php echo $cp['telephone']; ?></td>
+             <td><?php echo $ct['id']; ?></td>
+             <td><?php echo $ct['numagence']; ?></td>
+             <td><?php echo $ct['numCompte']; ?></td>
+             <td><?php echo $ct['cleRib']; ?></td>
+             <td><?php echo $ct['clientphysique']; ?></td>
              <td>
-              <a href="<?php echo base_url('public/Physique/editCp/'.$cp['id']);?>" class="btn btn-success">Edit</a>
-              <a href="<?php echo base_url('public/Physique/deleteCp/'.$cp['id']);?>" class="btn btn-danger">Delete</a>
-              </td>
+              <a href="<?php echo base_url('public/Compte/editCm/'.$ct['id']);?>" class="btn btn-success">Edit</a>
+              <a href="<?php echo base_url('public/Compte/deleteCm/'.$ct['id']);?>" class="btn btn-danger">Delete</a>
+             </td>
           </tr>
          <?php endforeach; ?>
          <?php endif; ?>
